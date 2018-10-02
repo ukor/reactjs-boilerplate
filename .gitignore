@@ -1,0 +1,6 @@
+/node_modules
+.VSCODE
+.vs
+.idea
+.env
+/build
