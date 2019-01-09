@@ -2,10 +2,12 @@ import React from 'react';
 import ReactDom from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'mobx-react';
-import App from './Component/App'
+import * as Stores from './mobxStore';
+
+import App from './Component/App';
 const Root = (
 	<BrowserRouter>
-		<Provider>
+		<Provider {...Stores}>
 			<App />
 		</Provider>
 	</BrowserRouter>

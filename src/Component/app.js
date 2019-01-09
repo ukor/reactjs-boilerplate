@@ -1,9 +1,20 @@
 import React, { Component } from 'react';
+import { inject, observer } from 'mobx-react';
+import { ApplicationStore } from '../mobxStore';
+import styled from 'styled-components';
 
-class App extends Component{
+
+@inject('ApplicationStore')
+@observer
+class App extends Component {
 	render() {
+		const Title = styled.h1`
+			font-size: 3em;
+			text-align: center;
+			color: palevioletred;
+		`;
 		return (
-			<h1>Hello React </h1>
+			<Title>Hello {ApplicationStore.applicationName} </Title>
 		)
 	}
 }
