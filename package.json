@@ -18,9 +18,11 @@
   "author": "Ukor Jidechi Ekundayo",
   "license": "ISC",
   "dependencies": {
+    "@emotion/core": "^10.0.6",
     "@material-ui/core": "^1.3.0",
     "@material-ui/icons": "^1.1.0",
     "axios": "^0.18.0",
+    "babel-plugin-emotion": "^10.0.6",
     "dotenv-webpack": "^1.5.7",
     "idb": "^2.1.3",
     "inflection": "^1.12.0",
